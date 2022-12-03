@@ -27,22 +27,22 @@
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+
+    }
 }
 
-.link-klient:hover,
-.link-klient:focus {
-    border-color: var(--accent-color);
-
-}
-
-.link-klient:hover .icon-klient,
-.link-klient:focus .icon-klient {
-    fill: var(--accent-color);
-}
 
 
 
 .icon-klient {
     fill: var(--primary-icon-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.link-klient:hover &,
+.link-klient:focus & {
+    fill: var(--accent-color);
+}
 }

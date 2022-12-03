@@ -7,10 +7,10 @@
 .feature-item {
 
     width: 270px;
-}
 
-.list .feature-item+.feature-item {
-    margin-left: 30px;
+    .list &+& {
+        margin-left: 30px;
+    }
 }
 
 .feature-title {
