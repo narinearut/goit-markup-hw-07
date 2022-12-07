@@ -10,12 +10,12 @@
     background: var(--accent-color);
 
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+
+    @include font(700, 16px, 1.88, 0.06em);
+
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    
     box-shadow: 0px 4px 4px var(--button-shadow);
     border-radius: 4px;
     border: 1px solid transparent;

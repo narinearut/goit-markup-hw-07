@@ -7,9 +7,9 @@
     margin-bottom: 50px;
 
     color: var(--primary-text-color);
-    font-size: 36px;
-    line-height: 1.17;
+
+    @include font(null, 36px, 1.17, null);
+
     text-align: center;
-    letter-spacing: 0.03em;
 
 }

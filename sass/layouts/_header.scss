@@ -13,26 +13,26 @@ header {
 /* Logo */
 
 .link,
-.logo {
+.main-nav__logo {
     text-decoration: none;
     display: inline-block;
 }
 
 
 
-.logo,
+.main-nav__logo,
 .web {
     display: inline-block;
 
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+
+    @include font (700, 26px, 1.2, null);
+
 }
 
 
-.logo {
+.main-nav__logo {
     color: var(--black-logo);
 
     padding-top: 25px;
@@ -65,10 +65,8 @@ header {
     .link {
         display: block;
         color: var(--primary-text-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+
+        @include font(500, 14px, 1.14, 0.02em);
 
         padding-top: 32px;
         padding-bottom: 32px;
@@ -107,10 +105,7 @@ header {
         display: block;
         color: var(--secondary-text-color);
 
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+        @include font(500, 14px, 1.14, 0.02em);
 
 
         padding-top: 32px;
@@ -131,7 +126,7 @@ header {
 }
 
 
-.svg-tel {
+.auth-nav__svg-tel {
     fill: var(--secondary-text-color);
     margin-right: 10px;
 
@@ -139,8 +134,8 @@ header {
     &:focus {
         fill: var(--accent-color);
     }
-.tel:hover &,
-.tel:focus & {
+.auth-nav__tel:hover &,
+.auth-nav__tel:focus & {
     fill: var(--accent-color);
 }
 
@@ -149,13 +144,13 @@ header {
 
 
 
-.tel-item {
+.auth-nav__tel-item {
     display: flex;
     justify-content: baseline;
     align-items: center;
 }
 
-.svg-mail {
+.auth-nav__svg-mail {
     fill: var(--secondary-text-color);
     margin-right: 10px;
 
@@ -164,8 +159,8 @@ header {
         fill: var(--accent-color);
     }
     
-    .mail:hover &,
-.mail:focus & {
+    .auth-nav__mail:hover &,
+.auth-nav__mail:focus & {
     fill: var(--accent-color);
 }
 }

@@ -1,19 +1,23 @@
+.proff{}
 
-.proff-img {
+.proff__title {}
+
+.proff__list{}
+
+
+.proff__img {
     position: relative;
     .list &+& {
     margin-left: 30px;
 }
 }
 
-.proff-text {
+.proff__text {
     position: absolute;
     bottom: 0%;
 
+@include font(700, 14px, 1.14, null);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
 
